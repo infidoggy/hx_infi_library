@@ -6,9 +6,6 @@
     "description": "Library with some InfiDoggy's utils",
     "version": "0.0.1",
     "contributors": ["Infinite_Doggy"],
-    "dependencies": 
-    {
-        "flixel": "",
-        "openfl": ""
-    }
+    "releasenote": "release",
+    "dependencies": {"flixel": "", "openfl": ""}
 }
