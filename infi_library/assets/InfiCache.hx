@@ -1,4 +1,4 @@
-package utils.assets;
+package infi_library.assets;
 
 import flixel.FlxG;
 import flixel.graphics.FlxGraphic as Graphic;

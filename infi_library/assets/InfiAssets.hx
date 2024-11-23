@@ -1,4 +1,4 @@
-package utils.assets;
+package infi_library.assets;
 
 import flixel.graphics.FlxGraphic;
 import flixel.graphics.frames.FlxAtlasFrames;
