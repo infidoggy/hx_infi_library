@@ -5,7 +5,6 @@
     "tags": ["utils"],
     "description": "Library with some InfiDoggy's utils",
     "version": "0.0.1",
-    "classPath": "infi_library/",
     "contributors": ["Infinite_Doggy"],
     "dependencies": 
     {
