@@ -1,0 +1,15 @@
+{
+    "name": "infi_library",
+    "url" : "https://github.com/jasononeil/useless/",
+    "license": "MIT",
+    "tags": ["utils"],
+    "description": "Library with some InfiDoggy's utils",
+    "version": "0.0.1",
+    "classPath": "infi_library/",
+    "contributors": ["Infinite_Doggy"],
+    "dependencies": 
+    {
+        "flixel": "",
+        "openfl": ""
+    }
+}
