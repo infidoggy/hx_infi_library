@@ -1,4 +1,4 @@
-package infi_library.assets;
+package infiproject.assets;
 
 import flixel.FlxG;
 import flixel.graphics.FlxGraphic as Graphic;
@@ -16,9 +16,9 @@ class InfiCache
      */
     public var images:Map<String, CacheFile<Graphic>> = [];
     /**
-     * stored up sounds.
+     * stored up audios.
      */
-    public var sounds:Map<String, CacheFile<Sound>> = [];
+    public var audios:Map<String, CacheFile<Sound>> = [];
     /**
      * stored up files.
      * 
@@ -51,13 +51,13 @@ class InfiCache
                 graphic.persist = true;
                 images.set(path, new CacheFile(graphic, keepStored));
             case Sound:
-                var sound:Sound = cast data;
-                sounds.set(path, new CacheFile(sound, keepStored));
+                var audio:Sound = cast data;
+                audios.set(path, new CacheFile(audio, keepStored));
             case String:
                 var file:String = cast data;
                 files.set(path, new CacheFile(file, keepStored));
             default:
-                throw "wut???";
+                throw "you are loading a incompatible file!";
         };
     }
 
@@ -76,7 +76,7 @@ class InfiCache
         {
             for (path => file in map) 
             {
-                if (Project.importantFiles.contains(path)) continue;
+                if (InfiProject.importantFiles.contains(path)) continue;
                 @:privateAccess
                 {
                     switch Type.getClass(file.data) 
@@ -86,7 +86,7 @@ class InfiCache
                             FlxG.bitmap.remove(graphic);
                             graphic.persist = false;
                             images.remove(path);
-                        case Sound: sounds.remove(path);
+                        case Sound: audios.remove(path);
                         case String: files.remove(path); 
                     }
                 }

@@ -1,0 +1,4 @@
+# --main Main
+--library flixel
+--library openfl
+# --class-path src

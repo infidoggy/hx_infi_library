@@ -1,11 +1,10 @@
 {
-    "name": "infi_library",
+    "name": "infiproject",
     "url" : "https://github.com/infidoggy/hx_infi_library",
     "license": "MIT",
     "tags": ["utils"],
     "description": "Library with some InfiDoggy's utils",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "contributors": ["Infinite_Doggy"],
-    "releasenote": "release",
-    "dependencies": {"flixel": "", "openfl": ""}
+    "releasenote": "release"
 }

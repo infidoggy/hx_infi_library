@@ -1,4 +1,4 @@
-package infi_library.assets;
+package infiproject.assets;
 
 import flixel.FlxG;
 import flixel.graphics.FlxGraphic as Graphic;
@@ -16,6 +16,12 @@ class InfiLoad
         _parent = parent;
     }
 
+    /**
+     * load a image
+     * 
+     * @param keepStored if can keep stored up in cache
+     * @return Graphic
+     */
     public function image(path:String, ?keepStored:Bool = false):Graphic
     {
         if (_parent.cache.images.exists(path)) return cast _parent.cache.images[path].data;
@@ -41,6 +47,12 @@ class InfiLoad
     //     return sounds(sound, "music", folder);
     // }
 
+    /**
+     * load a file
+     * 
+     * @param keepStored if can keep stored up in cache
+     * @return String
+     */
     public function file(path:String, ?keepStored:Bool = false):String
     {
         var daFile:String = null;
@@ -59,7 +71,13 @@ class InfiLoad
     public function json(path:String, ?keepStored:Bool = false):Dynamic
         return Json.parse(file(path + '.json', keepStored));
 
-    public function sound(path:String, ?keepStored:Bool = false):Sound
+    /**
+     * load a audio
+     * 
+     * @param keepStored if can keep stored up in cache
+     * @return Sound
+     */
+    public function audio(path:String, ?keepStored:Bool = false):Sound
     {
         var sound:Sound = null;
 
