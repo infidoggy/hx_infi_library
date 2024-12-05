@@ -81,7 +81,8 @@ class InfiLoad
     {
         var sound:Sound = null;
 
-        if (_parent.cache.sounds.exists(path)) return cast _parent.cache.sounds[path].data;
+		if (_parent.cache.audios.exists(path))
+			return cast _parent.cache.audios[path].data;
 
         if (OFLAssets.exists(path))
         {

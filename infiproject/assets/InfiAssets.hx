@@ -140,8 +140,10 @@ class InfiAssetsExtra
      * @return Array<Sound>
      */
     public function getSong(song:String = 'bopeebo', ?keepStorage:Bool = false):Array<Sound>
-        return [_parent.load.sound(_parent.getMusic('songs/' + song + '/Inst'), keepStorage),
-                _parent.load.sound(_parent.getMusic('songs/' + song + '/Voices'), keepStorage)];
+		return [
+			_parent.load.audio(_parent.getMusic('songs/' + song + '/Inst'), keepStorage),
+			_parent.load.audio(_parent.getMusic('songs/' + song + '/Voices'), keepStorage)
+		];
 
     /**
      * Return a sparrow atlas sprite sheet

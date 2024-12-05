@@ -31,7 +31,7 @@ class InfiCache
     public function new()
     {   
         _list[0] = images;
-        _list[1] = sounds;
+		_list[1] = audios;
         _list[2] = files;
     }
 
