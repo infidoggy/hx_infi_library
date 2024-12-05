@@ -103,8 +103,8 @@ class InfiCache
 @:allow(utils.assets.InfiLoad)
 private class CacheFile<T>
 {
-    private var data:T;
-    private var keepStored:Bool;
+	public var data:T;
+	public var keepStored:Bool;
 
     public function new(data:T, KeepStored:Bool)
     {
