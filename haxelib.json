@@ -4,7 +4,7 @@
     "license": "MIT",
     "tags": ["utils"],
     "description": "Library with some InfiDoggy's utils",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "contributors": ["Infinite_Doggy"],
     "releasenote": "release"
 }
